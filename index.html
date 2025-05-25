@@ -1,64 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Meson</title>
+    <title>Hotel El Mesón</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header>
-        <div class="logo"><img src="img/meson_logo_header.png" alt=""></div>
+        <div class="logo"><img src="meson_logo_header.png" alt="Logo Hotel El Mesón"></div>
     </header>
 
-  <nav>
-    <a href="#bienvenida">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <nav>
+        <a href="#bienvenida">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#habitaciones">Habitaciones</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-  <section id="bienvenida">
-    <h2>Bienvenidos</h2>
-    <p>En Hotel El Mesón, te ofrecemos una experiencia cálida y relajante, ideal para viajes de descanso o negocios. Disfruta de nuestras cómodas habitaciones y excelente atención personalizada.</p>
-  </section>
+    <section id="bienvenida">
+        <h2>Bienvenidos</h2>
+        <p>En Hotel El Mesón, te ofrecemos una experiencia cálida y relajante, ideal para viajes de descanso o negocios. Disfruta de nuestras cómodas habitaciones y excelente atención personalizada.</p>
+    </section>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="servicios">
-      <div class="servicio">
-        <h3>Wi-Fi Gratis</h3>
-        <p>Conexión rápida en todas las áreas del hotel.</p>
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios">
+            <div class="servicio">
+                <h3>Wi-Fi Gratis</h3>
+                <p>Conexión rápida en todas las áreas del hotel.</p>
+            </div>
+            <div class="servicio">
+                <h3>Desayuno Incluido</h3>
+                <p>Despierta con un delicioso desayuno continental.</p>
+            </div>
+            <div class="servicio">
+                <h3>Recepción 24/7</h3>
+                <p>Estamos disponibles para ti en todo momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-habitaciones">
+  <h2>Nuestras Habitaciones</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Suite Colonial Individual -->
+      <div class="swiper-slide habitacion-casa">
+        <div class="imagen-habitacion">
+          <img src="Individual (1).jpeg" alt="Suite Colonial Individual">
+          <div class="etiqueta-top rojo">Individual</div>
+        </div>
+        <div class="contenido-habitacion">
+          <span class="categoria">Hospédate en El Mesón</span>
+          <h3 class="titulo">Suite Colonial Individual</h3>
+          <div class="detalles">
+            <ul>
+              <li>✔ Cama individual</li>
+              <li>✔ Baño privado</li>
+              <li>✔ Desayuno incluido</li>
+              <li>✔ Wi-Fi y escritorio</li>
+            </ul>
+          </div>
+          <div class="precio">
+            <span class="precio-original">S/ 180</span>
+            <span class="precio-final">S/ 150</span>
+            <span class="descuento">-17%</span>
+          </div>
+          <div class="beneficio">
+            <span>🎁 Reserva directa y obtén café gratis</span>
+          </div>
+        </div>
       </div>
-      <div class="servicio">
-        <h3>Desayuno Incluido</h3>
-        <p>Despierta con un delicioso desayuno continental.</p>
+
+      <!-- Doble Tradicional -->
+      <div class="swiper-slide habitacion-casa">
+        <div class="imagen-habitacion">
+          <img src="Doble (1).jpeg" alt="Doble Tradicional">
+          <div class="etiqueta-top rojo">Doble</div>
+        </div>
+        <div class="contenido-habitacion">
+          <span class="categoria">Confort y Comodidad</span>
+          <h3 class="titulo">Doble Tradicional</h3>
+          <div class="detalles">
+            <ul>
+              <li>✔ 2 camas individuales</li>
+              <li>✔ TV y Wi-Fi</li>
+              <li>✔ Agua caliente</li>
+              <li>✔ Vista interior</li>
+            </ul>
+          </div>
+          <div class="precio">
+            <span class="precio-original">S/ 250</span>
+            <span class="precio-final">S/ 210</span>
+            <span class="descuento">-16%</span>
+          </div>
+          <div class="beneficio">
+            <span>🛏️ Ideal para compartir</span>
+          </div>
+        </div>
       </div>
-      <div class="servicio">
-        <h3>Recepción 24/7</h3>
-        <p>Estamos disponibles para ti en todo momento.</p>
+
+      <!-- Familiar Clásica -->
+      <div class="swiper-slide habitacion-casa">
+        <div class="imagen-habitacion">
+          <img src="Familiar (1).jpeg" alt="Familiar Clásica">
+          <div class="etiqueta-top azul">Familiar</div>
+        </div>
+        <div class="contenido-habitacion">
+          <span class="categoria">Espacio Familiar</span>
+          <h3 class="titulo">Familiar Clásica</h3>
+          <div class="detalles">
+            <ul>
+              <li>✔ 1 cama doble + 2 individuales</li>
+              <li>✔ Ideal para 4 personas</li>
+              <li>✔ Desayuno incluido</li>
+              <li>✔ TV y Wi-Fi</li>
+            </ul>
+          </div>
+          <div class="precio">
+            <span class="precio-original">S/ 350</span>
+            <span class="precio-final">S/ 290</span>
+            <span class="descuento">-17%</span>
+          </div>
+          <div class="beneficio">
+            <span>👨‍👩‍👧‍👦 Ahorra en estadías familiares</span>
+          </div>
+        </div>
       </div>
+
+      <!-- Suite Colonial Premium -->
+      <div class="swiper-slide habitacion-casa">
+        <div class="imagen-habitacion">
+          <img src="Indiviudal premiun.jpeg" alt="Suite Colonial Premium">
+          <div class="etiqueta-top rojo">Premium</div>
+        </div>
+        <div class="contenido-habitacion">
+          <span class="categoria">Exclusividad</span>
+          <h3 class="titulo">Suite Colonial Premium</h3>
+          <div class="detalles">
+            <ul>
+              <li>✔ Cama Queen</li>
+              <li>✔ Vista a la plaza</li>
+              <li>✔ Minibar y jacuzzi</li>
+              <li>✔ Desayuno gourmet</li>
+            </ul>
+          </div>
+          <div class="precio">
+            <span class="precio-original">S/ 450</span>
+            <span class="precio-final">S/ 385</span>
+            <span class="descuento">-15%</span>
+          </div>
+          <div class="beneficio">
+            <span>✨ Ideal para ocasiones especiales</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Familiar Premium Vista Plaza -->
+      <div class="swiper-slide habitacion-casa">
+        <div class="imagen-habitacion">
+          <img src="Familiar premiun.jpeg" alt="Familiar Premium Vista Plaza">
+          <div class="etiqueta-top azul">Familiar Premium</div>
+        </div>
+        <div class="contenido-habitacion">
+          <span class="categoria">Lujo y Comodidad</span>
+          <h3 class="titulo">Familiar Premium Vista Plaza</h3>
+          <div class="detalles">
+            <ul>
+              <li>✔ Hasta 5 personas</li>
+              <li>✔ Balcón con vista</li>
+              <li>✔ 2 baños</li>
+              <li>✔ Servicios completos</li>
+            </ul>
+          </div>
+          <div class="precio">
+            <span class="precio-original">S/ 520</span>
+            <span class="precio-final">S/ 450</span>
+            <span class="descuento">-13%</span>
+          </div>
+          <div class="beneficio">
+            <span>🌆 Vista privilegiada a la ciudad</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+    <!-- Botones de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
 
-  <section id="galeria">
-    <h2>Galería</h2>
-    <div class="galeria">
-      <div class="imagen">[Imagen 1]</div>
-      <div class="imagen">[Imagen 2]</div>
-      <div class="imagen">[Imagen 3]</div>
-    </div>
-  </section>
+<section id="galeria">
+  <h2>Galería</h2>
+  <div class="galeria">
+    <div class="imagen"><img src="img1.jpeg" alt="Fachada del hotel"></div>
+    <div class="imagen"><img src="img2.jpeg" alt="Lobby del hotel"></div>
+    <div class="imagen"><img src="img3.jpeg" alt="Habitación premium"></div>
+    <div class="imagen oculto"><img src="img4.jpeg" alt="Desayuno incluido"></div>
+    <div class="imagen oculto"><img src="img5.jpeg" alt="Vista nocturna del hotel"></div>
+  
+  </div>
+  <button id="toggle-btn">Ver más</button>
+</section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📍 Dirección: Calle Principal 123, Centro Histórico<br>
-    📞 Teléfono: +51 957 703 235<br>
-    📧 Correo: reservas@elmesonhotel.com</p>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Hotel El Mesón. Todos los derechos reservados.</p>
-  </footer>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Dirección: Calle Principal 123, Centro Histórico<br>
+        📞 Teléfono: +51 957 703 235<br>
+        📧 Correo: reservas@elmesonhotel.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel El Mesón. Todos los derechos reservados.</p>
+    </footer>
+
+   <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+    </script>
+<script>
+  const toggleBtn = document.getElementById('toggle-btn');
+const imagenesOcultas = document.querySelectorAll('.imagen.oculto');
+
+toggleBtn.addEventListener('click', () => {
+  const isHidden = imagenesOcultas[0].style.display === 'none' || imagenesOcultas[0].style.display === '';
+
+  imagenesOcultas.forEach(img => {
+    img.style.display = isHidden ? 'block' : 'none';
+  });
+
+  toggleBtn.textContent = isHidden ? 'Ver menos' : 'Ver más';
+});
+
+</script>
+      
 </body>
+
 </html>
